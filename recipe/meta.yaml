@@ -1,5 +1,5 @@
 {% set name = "questplus" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cf2cc238f1a2207182433fa0698507155705edc4e9f079c28b81ee062e6af25b
+  sha256: ccc1f70c1ee0400bfa76a8cb32f867c17d124d78a798c7f9643eb451a85afbfe
 
 build:
   noarch: python
