@@ -23,6 +23,7 @@ requirements:
     - xarray
     - scipy
     - json_tricks
+    - setuptools  # Required for xarray
 
 test:
   imports:
