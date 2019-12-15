@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -23,7 +23,6 @@ requirements:
     - xarray
     - scipy
     - json_tricks
-    - setuptools  # Required for xarray
 
 test:
   imports:
