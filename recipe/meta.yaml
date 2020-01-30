@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 3
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - xarray
+    - xarray =0.14.1=py_0
     - scipy
     - json_tricks
 
