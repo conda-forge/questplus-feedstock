@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
+    - numpy
     - xarray
     - scipy
     - json_tricks
@@ -30,7 +31,7 @@ test:
 
 about:
   home: https://github.com/hoechenberger/questplus
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: A QUEST+ implementation in Python
