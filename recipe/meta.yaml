@@ -1,5 +1,5 @@
 {% set name = "questplus" %}
-{% set version = "2019.4" %}
+{% set version = "2023.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5b8428280679cb43b48326a691b2b38fc99cb41f14bb733167701b02c1ae2978
+  sha256: 89337d613834fa365dc4a1b25496ccf17debb0d6d5a56c6b12a647da8195ca8e
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
+    - numpy
     - xarray
     - scipy
     - json_tricks
@@ -30,10 +31,10 @@ test:
 
 about:
   home: https://github.com/hoechenberger/questplus
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'A QUEST+ implementation in Python'
+  summary: A QUEST+ implementation in Python
   description: |
     This is a simple implementation of the QUEST+ algorithm in Python.
 
